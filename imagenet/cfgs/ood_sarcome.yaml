@@ -1,0 +1,37 @@
+MODEL:
+  ADAPTATION: "sarcome"
+  ARCH: 'Standard_VITB'
+CORRUPTION:
+  DATASET: 'imagenet'
+  OOD_DATASET: places365
+  NUM_OOD_SAMPLES: 5000
+  NUM_EX: 5000
+  SEVERITY:
+    - 5
+  TYPE:
+    - 'gaussian_noise'
+    - 'shot_noise'
+    - 'impulse_noise'
+    - 'defocus_blur'
+    - 'glass_blur'
+    - 'motion_blur'
+    - 'zoom_blur'
+    - 'snow'
+    - 'frost'
+    - 'fog'
+    - 'brightness'
+    - 'contrast'
+    - 'elastic_transform'
+    - 'pixelate'
+    - 'jpeg_compression'
+TEST:
+  BATCH_SIZE: 64
+OPTIM:
+  BETA: 0.9
+  LR: 0.01
+  METHOD: AdamW
+  STEPS: 50
+  WD: 0.01
+
+
+  

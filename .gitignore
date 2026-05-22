@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+conda-meta/
+
+# Logs
+*.log
+logs/
+
+# Generated experiment outputs
+output_closed_benchmarks/
+output_imgnetc/
+output_laionc/
+
+# Large/generated files
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.npy
+*.npz
+
+# System/editor
+.DS_Store
+.vscode/

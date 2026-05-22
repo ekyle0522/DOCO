@@ -1,0 +1,31 @@
+MODEL:
+  ADAPTATION: "doco"
+  ARCH: 'Standard_VITB'
+TEST:
+  BATCH_SIZE: 64
+OPTIM:
+  BETA: 0.9
+  LR: 0.1
+  METHOD: AdamW
+  STEPS: 50
+  WD: 0.01
+
+  DOCO_BETA: 0.5
+  DOCO_PROMPT_NUM: 8
+  DOCO_EMA_ALPHA: 0.999
+  DOCO_GMM_POOL_SIZE: 512
+CORRUPTION:
+  ID_BENCHMARK: 'laion_c'
+  DATASET: 'laion-c'
+  NUM_OOD_SAMPLES: 0
+  NUM_EX: 5000
+  SEVERITY:
+    - 3
+
+  TYPE:
+    - "mosaic"
+    - "vertical_lines"
+    - "glitched"
+    - "luminance"
+    - "geometric_shapes"
+    - "sticker"

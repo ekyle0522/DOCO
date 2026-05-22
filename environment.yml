@@ -1,0 +1,43 @@
+name: doco
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9
+  - pip
+  - cudatoolkit=11.3.1
+  - imagemagick
+  - wand
+  - pip:
+      - numpy==1.22.4
+      - scipy==1.7.1
+      - pandas==2.3.1
+      - matplotlib==3.6.3
+      - scikit-learn==1.0.1
+      - scikit-image==0.18.3
+      - pillow==8.4.0
+      - openpyxl==3.1.5
+      - pyyaml==6.0
+      - requests==2.32.3
+      - tqdm==4.64.0
+      - sentencepiece==0.1.96
+      - opencv-python==4.10.0.84
+      - torch==2.0.1
+      - torchvision==0.15.2
+      - transformers==4.48.1
+      - timm==1.0.3
+      - einops==0.8.0
+      - gdown==5.2.0
+      - webdataset==0.2.100
+      - imagecorruptions==1.1.2
+      - grad-cam==1.5.5
+      - gradio==3.48.0
+      - fastapi==0.115.7
+      - uvicorn==0.34.0
+      - yacs==0.1.8
+      - iopath==0.1.9
+      - submitit==1.4.0
+      - addict==2.4.0
+      - yapf==0.31.0
+      - glitch_this
